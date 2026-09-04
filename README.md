@@ -15,36 +15,37 @@
 
 ```mermaid
 flowchart TD
-    %% Base Theme Styling
+    %% Base Theme & Class Definitions
     classDef default fill:#12131C,stroke:#3A3F58,stroke-width:1px,color:#E2E8F0,font-family:sans-serif;
     classDef startNode fill:#1E293B,stroke:#6366F1,stroke-width:2px,color:#818CF8;
     classDef diamondNode fill:#1E1B4B,stroke:#818CF8,stroke-width:2px,color:#C7D2FE;
     classDef endNode fill:#0F172A,stroke:#10B981,stroke-width:2px,color:#34D399;
 
-    A([Université des Sciences et de la Technologie 'Houari Boumediène']):::startNode --> B[Développement de logiciels & Programmation procédurale]
+    %% Academic Foundation
+    A([Université des Sciences et de la Technologie Houari Boumediène]):::startNode --> B[Développement de logiciels & Programmation procédurale]
     
     B --> C{Orientation Technique}:::diamondNode
     
     %% Branch 1: Web & Full-Stack Flow
-    C -->|Option Principale| D[Développement Full-Stack<br/>HTML • CSS • JavaScript • PHP<br/>Node.js • React.js • Prisma • SQL]
+    C -->|Option Principale| D[Développement Full-Stack<br/>• HTML / CSS / JavaScript / PHP<br/>• Node.js / React.js / Prisma / SQL]
     
-    %% Branch 2: Core Languages & Fundamentals
-    C -->|Option Secondaire| E[Langages Réseau & Design<br/>Pascal • C • Java • Assembly 8086<br/>Figma • Canva • Anglais]
+    %% Branch 2: Core Languages & Design
+    C -->|Option Secondaire| E[Langages Systèmes & Design<br/>• Pascal / C / Java / Assembly 8086<br/>• Figma / Canva / Anglais]
 
-    %% Low level network & Infrastructure layer (Enhanced OSI & Low-Level)
-    D -->|Intégration Réseau| I[Architecture OSI & Bas Niveau<br/>Sockets • Trames & Parité Paire/Impaire<br/>Sous-réseaux IP • TCP/UDP Port 53]
+    %% Low-Level Network & Infrastructure Layer
+    D -->|Intégration Réseau| I[Architecture OSI & Bas Niveau<br/>• Sockets & Sockets API<br/>• Trames & Parité Paire/Impaires<br/>• Sous-réseaux IP & TCP/UDP Port 53]
     E -->|Intégration Réseau| I
 
     %% DNS Architecture Deep Dive
-    I --> DNS[Ingénierie DNS & Résolution<br/>Root/TLD/Authoritative • Recursive Resolver<br/>DoH/DoT • DNSSEC • TTL/Caching]
+    I --> DNS[Ingénierie DNS & Résolution<br/>• Root / TLD / Authoritative<br/>• Recursive Resolver<br/>• DoH / DoT / DNSSEC<br/>• Caching & TTL]
 
     %% Security & Network Analysis Decisions
     DNS -->|Évaluation Spécialisée| F{Analyse & Sécurité Réseau?}:::diamondNode
     
-    F -->|Sécurité & Audit| G[Sécurité & Attaques Réseau<br/>Kali Linux • Wireshark • Scapy<br/>AXFR Zone Transfer Attack • ThreadScan]
-    F -->|Traitement & Scripting| H[Python & Data Analysis<br/>Pandas • NumPy]
+    F -->|Sécurité & Audit| G[Sécurité & Attaques Réseau<br/>• Kali Linux / Wireshark / Scapy<br/>• AXFR Zone Transfer Attack<br/>• ThreadScan]
+    F -->|Traitement & Scripting| H[Python & Data Analysis<br/>• Pandas / NumPy]
 
-    %% Flow transitions
+    %% Flow transitions & Feedback loops
     I -->|Mise en pratique Web| D
     G -->|Montée en compétences| J[Projets Avancés<br/>ThreadScan Pipeline]
     J --> D
