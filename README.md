@@ -84,8 +84,8 @@ Figma ---> Canva ---> HTML ---> CSS ---> React.js
 | **Full-Stack Web** | Développement full-stack, HTML, CSS, JavaScript, Node.js, React.js, PHP, prisma, SQL |
 | **Network & Cyber Security** | Linux, Kali Linux, Wireshark, Sockets, Protocole TCP, Couche 3, IPv4, Serveur DNS, Sécurité réseau, Informatique Sécurisée |
 | **Programming Languages** | C (langage de programmation), Java, Python (langage de programmation), JavaScript, PHP, SQL |
-| **Design & Languages** | Figma (logiciel), Canva, Anglais |
-| **Featured Projects** | MBTI Engine, ThreadScan |
+| **Design & Languages** | Figma (logiciel), Canva |
+| **langages I speak** | English , Frensh , Arabic , Kabyle , espagnole |
 
 ---
 
