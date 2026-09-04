@@ -33,7 +33,7 @@
     C -->|Option Secondaire| E[C & Java<br/>Figma • Canva • Anglais]
 
     %% Low level network & Infrastructure layer
-    D -->|Intégration Réseau| I[Sockets & Couche 3<br/>Protocole TCP • IPv4 • Serveur DNS]
+    D -->|Intégration Réseau| I[Network Security]
     E -->|Intégration Réseau| I
 
     %% Security & Network Analysis Decisions
