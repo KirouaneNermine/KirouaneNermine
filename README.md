@@ -32,9 +32,13 @@ flowchart TD
     %% Branch 2: Core Languages & Design
     C -->|Option Secondaire| E[Langages Systèmes & Design<br/>• Pascal / C / Java / Assembly 8086<br/>• Figma / Canva / Anglais]
 
+    %% Branch 3: Software Engineering, Systems & Modeling
+    C -->|Conception & Systèmes| L[Génie Logiciel & Systèmes d'Exploitation<br/>• Génie Logiciel & SE<br/>• Méthode MERISE: MCD / MLD / MCT / MOT<br/>• Analyse & Modélisation OMT]
+
     %% Low-Level Network & Infrastructure Layer
     D -->|Intégration Réseau| I[Architecture OSI & Bas Niveau<br/>• Sockets & Sockets API<br/>• Trames & Parité Paire/Impaires<br/>• Sous-réseaux IP & TCP/UDP Port 53]
     E -->|Intégration Réseau| I
+    L -->|Analyse Structurée| I
 
     %% DNS Architecture Deep Dive
     I --> DNS[Ingénierie DNS & Résolution<br/>• Root / TLD / Authoritative<br/>• Recursive Resolver<br/>• DoH / DoT / DNSSEC<br/>• Caching & TTL]
@@ -56,6 +60,7 @@ flowchart TD
     %% Final Competency Goal
     D -->|Synthèse des compétences| K([Ingénierie Logicielle, Réseaux & Sécurité]):::endNode
     E -->|Synthèse des compétences| K
+    L -->|Synthèse des compétences| K
 ```
 ---
 
