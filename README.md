@@ -4,8 +4,6 @@
 
 ### Full-Stack Developer · Network & Systems Security · CS Student @ USTHB
 
-[![GitHub Followers](https://img.shields.io/github/followers/YOUR_USERNAME?style=for-the-badge&logo=github&color=0d1117)](https://github.com/KirouaneNermine)
-[![License](https://img.shields.io/badge/Status-USTHB%20Student-blue?style=for-the-badge&logo=academicons)](https://usthb.dz)
 
 </div>
 
