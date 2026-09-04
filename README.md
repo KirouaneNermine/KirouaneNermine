@@ -26,30 +26,34 @@ flowchart TD
     B --> C{Orientation Technique}:::diamondNode
     
     %% Branch 1: Web & Full-Stack Flow
-    C -->|Option Principal| D[Développement full-stack<br/>HTML • CSS • JavaScript • PHP<br/>Node.js • React.js • Prisma • SQL]
+    C -->|Option Principale| D[Développement Full-Stack<br/>HTML • CSS • JavaScript • PHP<br/>Node.js • React.js • Prisma • SQL]
     
-    %% Branch 2: Core Languages & Design Flow
-    C -->|Option Secondaire| E[C & Java<br/>Figma • Canva • Anglais]
+    %% Branch 2: Core Languages & Fundamentals
+    C -->|Option Secondaire| E[Langages Réseau & Design<br/>Pascal • C • Java • Assembly 8086<br/>Figma • Canva • Anglais]
 
-    %% Low level network & Infrastructure layer
-    D -->|Intégration Réseau| I[Sockets & Couche 3<br/>Protocole TCP • IPv4 • Serveur DNS]
+    %% Low level network & Infrastructure layer (Enhanced OSI & Low-Level)
+    D -->|Intégration Réseau| I[Architecture OSI & Bas Niveau<br/>Sockets • Trames & Parité Paire/Impaire<br/>Sous-réseaux IP • TCP/UDP Port 53]
     E -->|Intégration Réseau| I
 
+    %% DNS Architecture Deep Dive
+    I --> DNS[Ingénierie DNS & Résolution<br/>Root/TLD/Authoritative • Recursive Resolver<br/>DoH/DoT • DNSSEC • TTL/Caching]
+
     %% Security & Network Analysis Decisions
-    D -->|Évaluation Spécialisée| F{Kali Linux & Wireshark?}:::diamondNode
-    F -->|Sécurité & Audit| G[Sécurité réseau & Informatique Sécurisée<br/>ThreadScan]
-    F -->|Traitement & Scripting| H[Python & Data Analysis]
+    DNS -->|Évaluation Spécialisée| F{Analyse & Sécurité Réseau?}:::diamondNode
+    
+    F -->|Sécurité & Audit| G[Sécurité & Attaques Réseau<br/>Kali Linux • Wireshark • Scapy<br/>AXFR Zone Transfer Attack • ThreadScan]
+    F -->|Traitement & Scripting| H[Python & Data Analysis<br/>Pandas • NumPy]
 
     %% Flow transitions
     I -->|Mise en pratique Web| D
-    I -->|Montée en compétences| J[Projets Avancés<br/>ThreadScan Pipeline]
+    G -->|Montée en compétences| J[Projets Avancés<br/>ThreadScan Pipeline]
     J --> D
 
     G --> C
     H --> C
 
     %% Final Competency Goal
-    D -->|Synthèse des compétences| K([Ingénierie Logicielle & Sécurité]):::endNode
+    D -->|Synthèse des compétences| K([Ingénierie Logicielle, Réseaux & Sécurité]):::endNode
     E -->|Synthèse des compétences| K
 ```
 ---
