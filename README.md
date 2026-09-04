@@ -14,7 +14,8 @@
 ##  Competency Flowchart Architecture
 
 ```mermaid
-flowchart TD
+
+   flowchart TD
     %% Base Theme Styling
     classDef default fill:#12131C,stroke:#3A3F58,stroke-width:1px,color:#E2E8F0,font-family:sans-serif;
     classDef startNode fill:#1E293B,stroke:#6366F1,stroke-width:2px,color:#818CF8;
@@ -23,34 +24,34 @@ flowchart TD
 
     A([Université des Sciences et de la Technologie 'Houari Boumediène']):::startNode --> B[Développement de logiciels & Programmation procédurale]
     
-    B --> C{Système d'exploitation & Linux}:::diamondNode
+    B --> C{Orientation Technique}:::diamondNode
     
-    %% Branch 1: F1 Flow (Full-Stack & Web Development)
-    C -->|F1 non vide| D[Développement full-stack<br/>HTML • CSS • JavaScript • PHP<br/>Node.js • React.js • prisma • SQL]
+    %% Branch 1: Web & Full-Stack Flow
+    C -->|Option Principal| D[Développement full-stack<br/>HTML • CSS • JavaScript • PHP<br/>Node.js • React.js • Prisma • SQL]
     
-    %% Branch 2: F2 Flow (Languages & Design)
-    C -->|F1 vide, F2 non vide| E[C & Java<br/>Figma • Canva • Anglais]
+    %% Branch 2: Core Languages & Design Flow
+    C -->|Option Secondaire| E[C & Java<br/>Figma • Canva • Anglais]
 
-    %% Low level network & I/O blocking
-    D -->|Demande E/S| I[Sockets & Couche 3<br/>Protocole TCP • IPv4 • Serveur DNS]
-    E -->|Demande E/S| I
+    %% Low level network & Infrastructure layer
+    D -->|Intégration Réseau| I[Sockets & Couche 3<br/>Protocole TCP • IPv4 • Serveur DNS]
+    E -->|Intégration Réseau| I
 
     %% Security & Network Analysis Decisions
-    D -->|Quantum expiré| F{Kali Linux & Wireshark?}:::diamondNode
-    F -->|Oui| G[Sécurité réseau & Informatique Sécurisée<br/>ThreadScan]
-    F -->|Non| H[Python & Data Analysis]
+    D -->|Évaluation Spécialisée| F{Kali Linux & Wireshark?}:::diamondNode
+    F -->|Sécurité & Audit| G[Sécurité réseau & Informatique Sécurisée<br/>ThreadScan]
+    F -->|Traitement & Scripting| H[Python & Data Analysis]
 
-    %% Re-entry / Promotions / Loops
-    I -->|I/O terminée, venait de F1| D
-    I -->|I/O terminée, venait de F2| J[Promotion → Full-Stack<br/>ThreadScan Pipeline]
+    %% Flow transitions
+    I -->|Mise en pratique Web| D
+    I -->|Montée en compétences| J[Projets Avancés<br/>ThreadScan Pipeline]
     J --> D
 
     G --> C
     H --> C
 
-    %% Output / Completion
-    D -->|Fin programme| K([MBTI Engine]):::endNode
-    E -->|Fin programme| K
+    %% Final Competency Goal
+    D -->|Synthèse des compétences| K([Ingénierie Logicielle & Sécurité]):::endNode
+    E -->|Synthèse des compétences| K
 ```
 
 ---
