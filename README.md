@@ -14,8 +14,7 @@
 ##  Competency Flowchart Architecture
 
 ```mermaid
-
-   flowchart TD
+flowchart TD
     %% Base Theme Styling
     classDef default fill:#12131C,stroke:#3A3F58,stroke-width:1px,color:#E2E8F0,font-family:sans-serif;
     classDef startNode fill:#1E293B,stroke:#6366F1,stroke-width:2px,color:#818CF8;
@@ -33,7 +32,7 @@
     C -->|Option Secondaire| E[C & Java<br/>Figma • Canva • Anglais]
 
     %% Low level network & Infrastructure layer
-    D -->|Intégration Réseau| I[Network Security]
+    D -->|Intégration Réseau| I[Sockets & Couche 3<br/>Protocole TCP • IPv4 • Serveur DNS]
     E -->|Intégration Réseau| I
 
     %% Security & Network Analysis Decisions
@@ -53,27 +52,6 @@
     D -->|Synthèse des compétences| K([Ingénierie Logicielle & Sécurité]):::endNode
     E -->|Synthèse des compétences| K
 ```
-
----
-
-## Workflow Pipelines
-
-```
-HTML ---> CSS ---> PHP ---> JavaScript ---> Node.js ---> prisma ---> SQL
-```
-```
-Linux ---> Kali Linux ---> Wireshark ---> Protocole TCP ---> Sockets ---> IPv4 ---> Serveur DNS
-```
-```
-Système d'exploitation ---> Couche 3 ---> Informatique Sécurisée ---> Sécurité réseau ---> ThreadScan
-```
-```
-Python ---> Pandas ---> NumPy ---> Data Analysis ---> Machine Learning
-```
-```
-Figma ---> Canva ---> HTML ---> CSS ---> React.js
-```
-
 ---
 
 ## Competencies Matrix
